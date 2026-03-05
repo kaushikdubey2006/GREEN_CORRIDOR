@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Traffic Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- ================= MAP ================= -->
+    <div id="map"></div>
+
+    <!-- ================= SIDE PANEL ================= -->
+    <div class="side-panel">
+
+        <h2>Traffic Control Center</h2>
+
+        <!-- ROUTE SELECTION -->
+        <div class="section">
+            <h3>Select Emergency Route</h3>
+
+            <label>City</label>
+            <select id="citySelect">
+                <option value="">Select City</option>
+            </select>
+
+            <label>Source</label>
+            <select id="sourceSelect">
+                <option value="">Select Source</option>
+            </select>
+
+            <label>Destination</label>
+            <select id="destinationSelect">
+                <option value="">Select Destination</option>
+            </select>
+
+            <button onclick="activateRoute()">🚑 Activate Route</button>
+        </div>
+
+        <!-- ACTIVE ROUTE DETAILS -->
+        <div class="section">
+            <h3>Active Route</h3>
+            <div id="routeDetails" class="card">
+                No active route
+            </div>
+        </div>
+
+        <!-- SIGNAL STATUS -->
+        <div class="section">
+            <h3>Signal Status</h3>
+            <div id="signalList" class="card">
+                Waiting for data...
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            Smart City Traffic Management System
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= JS FILES (ORDER MATTERS) ================= -->
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Map helper -->
+<script src="/Leaflet.js"></script>
+
+<!-- Main logic -->
+<script src="/script.js"></script>
+
+</body>
+</html>
