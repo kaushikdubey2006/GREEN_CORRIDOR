@@ -1,5 +1,5 @@
 # GREEN_CORRIDOR
-                                                                              Project Overview
+                                                                Project Overview
 
 The Smart Traffic Management System for Emergency Vehicles is designed to reduce delays faced by ambulances and other emergency vehicles in congested urban traffic. In many cities, heavy traffic and poorly synchronized traffic signals can significantly increase the response time during medical or critical emergencies. This project aims to solve that problem by creating an intelligent traffic control mechanism that prioritizes emergency vehicles.
 
